@@ -1,5 +1,5 @@
 title = "No More Headaches"
-baseURL = "https://www.example.com"
+baseURL = "/noMoreHeadaches"
 languageCode = "en-us"
 theme = "airspace-hugo"
 publishDir = "docs"
