@@ -1,5 +1,5 @@
 title = "No More Headaches"
-baseURL = "/noMoreHeadaches"
+baseURL = "https://as4mo3.github.io/noMoreHeadaches"
 languageCode = "en-us"
 theme = "airspace-hugo"
 publishDir = "docs"
