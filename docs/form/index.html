@@ -322,12 +322,11 @@
               <input type="radio" class="radio" name="silenceAlleviator" value="0">No<br><br>
             </div>
 
-
-            <button class="btn btn-default" onclick="submitButton();">Send message</button>
+            <a href="https://docs.google.com/presentation/d/1HcqCfA4I5UFAwmoKZy44wgP3H_Fxs7LkgGqAAx29oVU/edit#slide=id.g40e88080c9_4_2">
+              <button class="btn btn-default">Send message</button>
+            </a>
           </form>
-          <form id="submitForm" class="hidden" action="https://as4mo3.github.io/NoMoreHeadaches/php/toPresentation.php" method="POST" style="display: none;">
-            <input type="text" name="submitForm" value="">
-          </form>
+          
         </div>
       </div>
     </div>
@@ -336,56 +335,12 @@
 </section>
 
 <script>
-
-function validateInputs() {
-  
-  var x, valid = true;
-  if ((document.getElementsByTagName('p').length - 2) != $(":checked").length) {
-    valid = false;
+  function goToWebsite() {
+    window.location.href='https://docs.google.com/presentation/d/1HcqCfA4I5UFAwmoKZy44wgP3H_Fxs7LkgGqAAx29oVU/edit#slide=id.g40e6767a65_1_17';
   }
-  return valid;
-}
-
-function validateForm() {
-  
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("input");
-  
-  for (i = 0; i < y.length; i++) {
-    
-    if (y[i].value == "") {
-      
-			console.log("invalid");
-      y[i].className += " invalid";
-      
-      valid = false;
-    }
-  }
-  return valid; 
-}
-
-var issuesList = [];
-function submitButton() {
-  var x, y;
-  y = $(".input")
-  for (var i = 0; i < y.length; i++) {
-    issuesList.push(y[i].value)
-  }
-  x = $(":checked");
-  for (var i = 0; i < x.length; i++) {
-    issuesList[i+4] = x[i].value;
-  }
-  return issuesList;
-  
-    var issuesListString;
-    issuesListString = issuesList.toString();
-    $(".hidden")[0].children[0].value = selectedListString;
-    document.getElementById("submitForm")[0].value = selectedListString;
-    document.getElementById("submitForm").submit();
-  
-}
-
 </script>
+
+
 
 	
 
