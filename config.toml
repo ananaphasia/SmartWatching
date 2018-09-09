@@ -8,22 +8,6 @@ publishDir = "docs"
 [menu]
 
   [[menu.header]]
-    weight = 2
-    name = "Work"
-    url = "/work"
-  [[menu.header]]
-    weight = 3
-    name = "Blog"
-    url = "/blog"
-  [[menu.header]]
-    weight = 4
-    name = "Service"
-    url = "/service"
-  [[menu.header]]
-    weight = 5
-    name = "Contact"
-    url = "/contact"
-  [[menu.header]]
     weight = 6
     name = "Form"
     url = "/form"
@@ -31,26 +15,6 @@ publishDir = "docs"
 #    weight = 3
 #    name = "Other"
 #    url = "/blog"
-  [[menu.footer]]
-    weight = 1
-    name = "About us"
-    url = "#"
-  [[menu.footer]]
-    weight = 2
-    name = "Contact us"
-    url = "#"
-  [[menu.footer]]
-    weight = 3
-    name = "How it works"
-    url = "#"
-  [[menu.footer]]
-    weight = 4
-    name = "Blog"
-    url = "#"
-  [[menu.footer]]
-    weight = 5
-    name = "Terms"
-    url = "#"
 
 
 # The site's parameters
@@ -92,8 +56,12 @@ publishDir = "docs"
 
   [params.call]
     enable = true
-    title = "We design delightful digital experiences."
-    paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+    title = "Inspiration"
+    paragraph = "It all started with two challenges we saw in the clinical space:
+1. Clinicians needed information from patients about their headaches in order to understand what was causing them, and sometimes used paper headache journals
+2. About a billion dollars are spent per year on headache related neuroimaging, however only a small percentage of scans show up clinically relevant findings
+
+"
 
   [params.contact]
     enable = true
