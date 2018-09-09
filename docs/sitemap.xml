@@ -47,6 +47,10 @@
   </url>
   
   <url>
+    <loc>https://as4mo3.github.io/NoMoreHeadaches/form/</loc>
+  </url>
+  
+  <url>
     <loc>https://as4mo3.github.io/NoMoreHeadaches/tags/go/</loc>
     <lastmod>2015-09-17T13:47:08+02:00</lastmod>
     <priority>0</priority>
@@ -72,12 +76,6 @@
   
   <url>
     <loc>https://as4mo3.github.io/NoMoreHeadaches/categories/lorem/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://as4mo3.github.io/NoMoreHeadaches/</loc>
     <lastmod>2015-10-10T13:07:31+02:00</lastmod>
     <priority>0</priority>
   </url>
@@ -124,6 +122,12 @@
   
   <url>
     <loc>https://as4mo3.github.io/NoMoreHeadaches/work/</loc>
+  </url>
+  
+  <url>
+    <loc>https://as4mo3.github.io/NoMoreHeadaches/</loc>
+    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

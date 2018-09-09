@@ -1,0 +1,276 @@
+{{ partial "global-header.html" . }}
+
+<!-- contact form start -->
+<section id="headache-form">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <form>
+            {{ range $index, $element := .Site.Params.form.numInput }}
+            <div class="form-group">
+              <input type="text" class="form-control input" name="{{ $element.name }}" placeholder="{{ $element.name }}">
+            </div>
+            {{ end }}
+          </form>
+
+            <form>
+            <div class="form-group">
+            {{ range .Site.Params.form.radio}}
+            <p>{{.name}}</p>
+
+              {{range .buttons}}
+              <input type="radio" class="radio" name="{{.name}}" value="{{.button}}">{{.button}} <br>
+              {{end}}
+            {{end}}
+          </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <form>
+            <div class="form-group-2">
+              <textarea class="form-control" rows="3" placeholder="{{ .Site.Params.contact.form.message }}"></textarea>
+            </div>
+            <!-- {{ range .Site.Params.form.checkboxes }}
+            <div class="form-group">
+              <input type="checkbox" class="checkbox" name="{{.name}}" value="yes">
+              <input type="checkbox" class="radio" name="{{.name}}" value="no">
+            </div>
+            {{ end }} -->
+            <div class="form-group">
+              <p>Primary</p>
+              <input type="radio" class="radio" name="primary" value="1">Yes
+              <input type="radio" class="radio" name="primary" value="0">No
+            </div>
+            <div class="form-group">
+              <p>Aura</p>
+              <input type="radio" class="radio" name="aura" value="1">Yes
+              <input type="radio" class="radio" name="aura" value="0">No
+            </div>
+            <div class="form-group">
+              <p>Ringing</p>
+              <input type="radio" class="radio" name="ringing" value="1">Yes
+              <input type="radio" class="radio" name="ringing" value="0">No
+            </div>
+            <div class="form-group">
+              <p>visionBlurry</p>
+              <input type="radio" class="radio" name="visionBlurry" value="1">Yes
+              <input type="radio" class="radio" name="visionBlurry" value="0">No
+            </div>
+            <div class="form-group">
+              <p>visionLossComplete</p>
+              <input type="radio" class="radio" name="visionLossComplete" value="1">Yes
+              <input type="radio" class="radio" name="visionLossComplete" value="0">No
+            </div>
+            <div class="form-group">
+              <p>droopingFace</p>
+              <input type="radio" class="radio" name="droopingFace" value="1">Yes
+              <input type="radio" class="radio" name="droopingFace" value="0">No
+            </div>
+            <div class="form-group">
+              <p>neckPain</p>
+              <input type="radio" class="radio" name="neckPain" value="1">Yes
+              <input type="radio" class="radio" name="neckPain" value="0">No
+            </div>
+            <div class="form-group">
+              <p>lossOfSmell</p>
+              <input type="radio" class="radio" name="lossOfSmell" value="1">Yes
+              <input type="radio" class="radio" name="lossOfSmell" value="0">No
+            </div>
+            <div class="form-group">
+              <p>lossOfTaste</p>
+              <input type="radio" class="radio" name="lossOfTaste" value="1">Yes
+              <input type="radio" class="radio" name="lossOfTaste" value="0">No
+            </div>
+            <div class="form-group">
+              <p>seizure</p>
+              <input type="radio" class="radio" name="seizure" value="1">Yes
+              <input type="radio" class="radio" name="seizure" value="0">No
+            </div>
+            <div class="form-group">
+              <p>nauseaOrVomiting</p>
+              <input type="radio" class="radio" name="nauseaOrVomiting" value="1">Yes
+              <input type="radio" class="radio" name="nauseaOrVomiting" value="0">No
+            </div>
+            <div class="form-group">
+              <p>lightTrigger</p>
+              <input type="radio" class="radio" name="lightTrigger" value="1">Yes
+              <input type="radio" class="radio" name="lightTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>allergenTrigger</p>
+              <input type="radio" class="radio" name="allergenTrigger" value="1">Yes
+              <input type="radio" class="radio" name="allergenTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>loudNoiseTrigger</p>
+              <input type="radio" class="radio" name="loudNoiseTrigger" value="1">Yes
+              <input type="radio" class="radio" name="loudNoiseTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>dehydrationTrigger</p>
+              <input type="radio" class="radio" name="dehydrationTrigger" value="1">Yes
+              <input type="radio" class="radio" name="dehydrationTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>bendingOverTrigger</p>
+              <input type="radio" class="radio" name="bendingOverTrigger" value="1">Yes
+              <input type="radio" class="radio" name="bendingOverTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>stressTrigger</p>
+              <input type="radio" class="radio" name="stressTrigger" value="1">Yes
+              <input type="radio" class="radio" name="stressTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>periodTrigger</p>
+              <input type="radio" class="radio" name="periodTrigger" value="1">Yes
+              <input type="radio" class="radio" name="periodTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>exerciseTrigger</p>
+              <input type="radio" class="radio" name="exerciseTrigger" value="1">Yes
+              <input type="radio" class="radio" name="exerciseTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>sleepPatternChangeTrigger</p>
+              <input type="radio" class="radio" name="sleepPatternChangeTrigger" value="1">Yes
+              <input type="radio" class="radio" name="sleepPatternChangeTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>chemicalTrigger</p>
+              <input type="radio" class="radio" name="chemicalTrigger" value="1">Yes
+              <input type="radio" class="radio" name="chemicalTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>alcoholTrigger</p>
+              <input type="radio" class="radio" name="alcoholTrigger" value="1">Yes
+              <input type="radio" class="radio" name="alcoholTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>caffeineTrigger</p>
+              <input type="radio" class="radio" name="caffeineTrigger" value="1">Yes
+              <input type="radio" class="radio" name="caffeineTrigger" value="0">No
+            </div>
+            <div class="form-group">
+              <p>restingAlleviator</p>
+              <input type="radio" class="radio" name="restingAlleviator" value="1">Yes
+              <input type="radio" class="radio" name="restingAlleviator" value="0">No
+            </div>
+            <div class="form-group">
+              <p>waterAlleviator</p>
+              <input type="radio" class="radio" name="waterAlleviator" value="1">Yes
+              <input type="radio" class="radio" name="waterAlleviator" value="0">No
+            </div>
+            <div class="form-group">
+              <p>darkRoomAlleviator</p>
+              <input type="radio" class="radio" name="darkRoomAlleviator" value="1">Yes
+              <input type="radio" class="radio" name="darkRoomAlleviator" value="0">No
+            </div>
+            <div class="form-group">
+              <p>silenceAlleviator</p>
+              <input type="radio" class="radio" name="silenceAlleviator" value="1">Yes
+              <input type="radio" class="radio" name="silenceAlleviator" value="0">No
+            </div>
+
+
+            <button class="btn btn-default" onclick="submitButton();">{{ .Site.Params.contact.form.button }}</button>
+          </form>
+          <form id="submitForm" class="hidden" action="{{.Site.BaseURL}}/php/toTextFile.php" method="POST" style="display: none;">
+            <input type="text" name="submitForm" value="">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="contact-box" class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+
+          <h2>{{ .Site.Params.contact.box.title }}</h2>
+          <ul class="address-block">
+            <li>
+              <i class="fa fa-map-marker"></i>{{ .Site.Params.contact.box.address }}
+            </li>
+            <li>
+              <i class="fa fa-envelope-o"></i>{{ .Site.Params.contact.box.email }}
+            </li>
+            <li>
+              <i class="fa fa-phone"></i>{{ .Site.Params.contact.box.phone }}
+            </li>
+          </ul>
+          <ul class="social-icons">
+          {{ range .Site.Params.contact.social }}
+            <li>
+              <a href="{{ .url }}"><i class="fa {{ .icon }}"></i></a>
+            </li>
+          {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        {{ with .Site.Params.contact.gmaps}}
+        <div class="block">
+          <h2>{{ .title }}</h2>
+            <div class="google-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.472979439986!2d-73.97769068489596!3d40.7516207793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590247c56379%3A0x15e13bea38b43e18!2sChrysler+Building!5e0!3m2!1sen!2sus!4v1477406538220" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+
+function validateInputs() {
+  // make sure that at least one radio button selected per group
+  var x, valid = true;
+  if ((document.getElementsByTagName('p').length - 2) != $(":checked").length) {
+    valid = false;
+  }
+  return valid;
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("input");
+  // A loop that checks every input field in the current tab if the input is visible:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+			console.log("invalid");
+      y[i].className += " invalid";
+      // and set the current valid status to false:
+      valid = false;
+    }
+  }
+  return valid; // return the valid status
+}
+
+var issuesList = [];
+function submitButton() {
+  var x, y;
+  y = $(".input")
+  for (var i = 0; i < y.length; i++) {
+    issuesList.push(y[i].value)
+  }
+  x = $(":checked");
+  for (var i = 0; i < x.length; i++) {
+    issuesList[i+4] = x[i].value;
+  }
+  return issuesList;
+  if (validateForm() && validateInputs()) {
+    var issuesListString;
+    issuesListString = issuesList.toString();
+    $(".hidden")[0].children[0].value = selectedListString;
+    document.getElementById("submitForm")[0].value = selectedListString;
+    document.getElementById("submitForm").submit();
+  }
+}
+
+</script>

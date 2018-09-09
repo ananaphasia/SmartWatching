@@ -1,8 +1,9 @@
-title = "No More Headaches"
+title = "headER"
 baseURL = "https://as4mo3.github.io/NoMoreHeadaches/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 publishDir = "docs"
+
 
 [menu]
 
@@ -10,11 +11,26 @@ publishDir = "docs"
     weight = 2
     name = "Work"
     url = "/work"
+  [[menu.header]]
+    weight = 3
+    name = "Blog"
+    url = "/blog"
+  [[menu.header]]
+    weight = 4
+    name = "Service"
+    url = "/service"
+  [[menu.header]]
+    weight = 5
+    name = "Contact"
+    url = "/contact"
+  [[menu.header]]
+    weight = 6
+    name = "Form"
+    url = "/form"
 #  [[menu.header]]
 #    weight = 3
 #    name = "Other"
 #    url = "/blog"
-
   [[menu.footer]]
     weight = 1
     name = "About us"
@@ -36,6 +52,7 @@ publishDir = "docs"
     name = "Terms"
     url = "#"
 
+
 # The site's parameters
 [params]
 
@@ -49,12 +66,19 @@ publishDir = "docs"
 
   [params.slider]
     enable = true
-    title = "Revolutionizing headache treatment without costly physician visits"
-    subtitle = "When patients enter their headache information into our web application, our machine learning algorithms analyzes whether they should go to a physician for tests."
+    title = "Propelling Headache Diagnosis and Imaging into the 21st Century"
+    subtitle = "We learn from your headache patterns to help clinicians help you"
 
   [params.wrapper]
     enable = true
+    title = "Mission Statement"
+    # italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
+   paragraph = "We are transforming the way that clinicians diagnose headaches by empowering patients to share their headache symptoms in real time. Then, by analyzing headache patterns, and following the clinical outcomes associated with each pattern, our algorithm will learn to recognize if a patient’s headache pattern indicates that they are high or low risk. Our program will improve patient outcomes, reduce radiation exposure, and decrease medical costs."
+
+  [params.blog]
+    enable = true
     title = "Misson Statement"
+    subtitle = "Catch up with us, anytime and anywhere"
     paragraph = "Transforming the way that clinicians diagnose headaches by empowering patients to share their headache symptoms in real time. Then, by analyzing headache patterns, and following the clinical outcomes associated with each pattern, our algorithm will learn to recognize if a patient’s headache pattern indicates that they are high or low risk. Our program will improve patient outcomes, reduce radiation exposure, and decrease medical costs."
 
 #  [params.blog]
@@ -62,13 +86,9 @@ publishDir = "docs"
 #    title = "Get The Latest On What We're doing"
 #    subtitle = "Catch up with us, anytime and anywhere"
 
+
   [params.feature]
     enable = true
-    title = "We believe in great ideas"
-    content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
-    [params.feature.button]
-      caption = "View Works"
-      url = "#"
 
   [params.call]
     enable = true
@@ -92,3 +112,150 @@ publishDir = "docs"
       phone = "Phone: +88 01672 506 744"
     [params.contact.gmaps]
       title = "We Also Count in Google Maps"
+
+  [params.form]
+    [[params.form.numInput]]
+      name = "age"
+    [[params.form.numInput]]
+      name = "frequency / year"
+    [[params.form.numInput]]
+      name = "intensity"
+    [[params.form.numInput]]
+      name = "medications"
+    [[params.form.radio]]
+        name = "sex"
+      [[params.form.radio.buttons]]
+        button = "0"
+        name = "sex"
+      [[params.form.radio.buttons]]
+        button = "1"
+        name = "sex"
+    [[params.form.radio]]
+      name = "race"
+      [[params.form.radio.buttons]]
+        button = "0"
+        name = "race"
+      [[params.form.radio.buttons]]
+        button = "1"
+        name = "race"
+      [[params.form.radio.buttons]]
+        button = "2"
+        name = "race"
+      [[params.form.radio.buttons]]
+        button = "3"
+        name = "race"
+      [[params.form.radio.buttons]]
+        button = "4"
+        name = "race"
+    [[params.form.radio]]
+      name = "onset"
+      [[params.form.radio.buttons]]
+        button = "0"
+        name = "onset"
+      [[params.form.radio.buttons]]
+        button = "1"
+        name = "onset"
+      [[params.form.radio.buttons]]
+        button = "2"
+        name = "onset"
+    [[params.form.radio]]
+      name = "pain"
+      [[params.form.radio.buttons]]
+        button = "0"
+        name = "pain"
+      [[params.form.radio.buttons]]
+        button = "1"
+        name = "pain"
+      [[params.form.radio.buttons]]
+        button = "2"
+        name = "pain"
+      [[params.form.radio.buttons]]
+        button = "3"
+        name = "pain"
+      [[params.form.radio.buttons]]
+        button = "4"
+        name = "pain"
+    [[params.form.checkboxes]]
+      yes = "yes"
+      no = "no"
+      [[params.form.checkboxes.names]]
+        name = "primary"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "aura"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "ringing"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "visionBlurry"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "visionLossComplete"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "droopingFace"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "neckPain"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "lossOfSmell"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "lessOfTaste"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "seizure"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "nouseaOrVomiting"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "lightTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "loudNoiseTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "allergenTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "dehydrationTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "bendingOverTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "stressTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "periodTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "exerciseTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "sleepPatternChanTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "chemicalTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "alcoholTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "caffeineTrigger"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "restingAlleviator"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "waterAlleviator"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "darkRoomAlleviator"
+        testing = "testing"
+      [[params.form.checkboxes.names]]
+        name = "silenceAlleviator"
+        testing = "testing"

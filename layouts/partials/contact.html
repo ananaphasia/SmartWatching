@@ -1,21 +1,25 @@
 {{ partial "global-header.html" . }}
 
 <!-- contact form start -->
-{{ with .Site.Params.contact }}
-<section id="contact-form">
+<!-- {{ with .Site.Params.contact }} -->
+<section id="headache-form">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <form>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="{{ .form.name }}">
+              <input type="text" class="form-control" placeholder="Age">
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" placeholder="{{ .form.email }}">
+              <input type="text" class="form-control" placeholder="{{.}}">
             </div>
             <div class="form-group">
               <input type="text" class="form-control" placeholder="{{ .form.subject }}">
+            </div>
+
+            <div class="form-group">
+              {{.Site.Params.numInput}}
             </div>
           </form>
         </div>
@@ -26,7 +30,7 @@
             <div class="form-group-2">
               <textarea class="form-control" rows="3" placeholder="{{ .form.message }}"></textarea>
             </div>
-            <button class="btn btn-default" type="submit">{{ .form.button }}</button>
+            <button class="btn btn-default" type="submit">{{ .Site.Params.contact.form.button }}</button>
           </form>
         </div>
       </div>
@@ -35,20 +39,20 @@
       <div class="col-md-6 col-sm-12">
         <div class="block">
 
-          <h2>{{ .box.title }}</h2>
+          <h2>{{ .Site.Params.contact.box.title }}</h2>
           <ul class="address-block">
             <li>
-              <i class="fa fa-map-marker"></i>{{ .box.address }}
+              <i class="fa fa-map-marker"></i>{{ .Site.Params.contact.box.address }}
             </li>
             <li>
-              <i class="fa fa-envelope-o"></i>{{ .box.email }}
+              <i class="fa fa-envelope-o"></i>{{ .Site.Params.contact.box.email }}
             </li>
             <li>
-              <i class="fa fa-phone"></i>{{ .box.phone }}
+              <i class="fa fa-phone"></i>{{ .Site.Params.contact.box.phone }}
             </li>
           </ul>
           <ul class="social-icons">
-          {{ range .social }}  
+          {{ range .Site.Params.contact.social }}
             <li>
               <a href="{{ .url }}"><i class="fa {{ .icon }}"></i></a>
             </li>
@@ -57,7 +61,7 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
-        {{ with .gmaps}}
+        {{ with .Site.Params.contact.gmaps}}
         <div class="block">
           <h2>{{ .title }}</h2>
             <div class="google-map">
@@ -69,4 +73,4 @@
     </div>
   </div>
 </section>
-{{ end }}
+<!-- {{ end }} -->
