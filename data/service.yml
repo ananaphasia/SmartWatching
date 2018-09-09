@@ -1,45 +1,45 @@
 enable: true
-title: Our Services
+title: Our Inspiration
 subtitle: >
-  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+  It all started when we noticed glaring issues in the clinical space.
 content:
 
-  - icon: ion-coffee
-    name: Branding
+  - icon:
+    name:
     text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 
-  - icon: ion-compass
-    name: Web Design
+  - icon: ion-cash
+    name: Cash Spending
     text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      About a billion dollars are spent per year on headache-related neuroimaging. Yet, only a small percentage of scans show up clinically relevant findings.
 
-  - icon: ion-image
-    name: App Design
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
 
-  - icon: ion-bug
-    name: Start Up
+  - icon: ion-heart
+    name: Consistent Information
     text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      Clinicians need information from patients about their headaches to understand their causes. Clinicians evensometimes used paper headache journals.
+  #
+  - icon:
+    name:
+    text: >
 
-  - icon: ion-headphone
-    name: Logo Design
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
-  - icon: ion-leaf
-    name: Development
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
-  - icon: ion-planet
-    name: Brand Identity
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-
-  - icon: ion-earth
-    name: Brand Identity
-    text: >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  #
+  # - icon: ion-headphone
+  #   name: Logo Design
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  #
+  # - icon: ion-leaf
+  #   name: Development
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  #
+  # - icon: ion-planet
+  #   name: Brand Identity
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+  #
+  # - icon: ion-earth
+  #   name: Brand Identity
+  #   text: >
+  #     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut

@@ -1,7 +1,7 @@
 {{ partial "global-header.html" . }}
 
 <!-- contact form start -->
-<section id="headache-form">
+<section id="headache-form" style="padding-top: 25px;">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12">
@@ -22,6 +22,7 @@
               {{range .buttons}}
               <input type="radio" class="radio" name="{{.name}}" value="{{.button}}">{{.button}} <br>
               {{end}}
+              <br>
             {{end}}
           </div>
           </form>
@@ -30,9 +31,9 @@
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <form>
-            <div class="form-group-2">
+            <!-- <div class="form-group-2">
               <textarea class="form-control" rows="3" placeholder="{{ .Site.Params.contact.form.message }}"></textarea>
-            </div>
+            </div> -->
             <!-- {{ range .Site.Params.form.checkboxes }}
             <div class="form-group">
               <input type="checkbox" class="checkbox" name="{{.name}}" value="yes">
@@ -42,149 +43,149 @@
             <div class="form-group">
               <p>Primary</p>
               <input type="radio" class="radio" name="primary" value="1">Yes
-              <input type="radio" class="radio" name="primary" value="0">No
+              <input type="radio" class="radio" name="primary" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>Aura</p>
+              <p>Do you see auras?</p>
               <input type="radio" class="radio" name="aura" value="1">Yes
-              <input type="radio" class="radio" name="aura" value="0">No
+              <input type="radio" class="radio" name="aura" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>Ringing</p>
+              <p>Do you hear ringing?</p>
               <input type="radio" class="radio" name="ringing" value="1">Yes
-              <input type="radio" class="radio" name="ringing" value="0">No
+              <input type="radio" class="radio" name="ringing" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>visionBlurry</p>
+              <p>Is your vision blurry?</p>
               <input type="radio" class="radio" name="visionBlurry" value="1">Yes
-              <input type="radio" class="radio" name="visionBlurry" value="0">No
+              <input type="radio" class="radio" name="visionBlurry" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>visionLossComplete</p>
+              <p>Do you have complete vision loss?</p>
               <input type="radio" class="radio" name="visionLossComplete" value="1">Yes
-              <input type="radio" class="radio" name="visionLossComplete" value="0">No
+              <input type="radio" class="radio" name="visionLossComplete" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>droopingFace</p>
+              <p>Is your face drooping?</p>
               <input type="radio" class="radio" name="droopingFace" value="1">Yes
-              <input type="radio" class="radio" name="droopingFace" value="0">No
+              <input type="radio" class="radio" name="droopingFace" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>neckPain</p>
+              <p>Do you have neck pain?</p>
               <input type="radio" class="radio" name="neckPain" value="1">Yes
-              <input type="radio" class="radio" name="neckPain" value="0">No
+              <input type="radio" class="radio" name="neckPain" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>lossOfSmell</p>
+              <p>Are you experiencing a loss of smell?</p>
               <input type="radio" class="radio" name="lossOfSmell" value="1">Yes
-              <input type="radio" class="radio" name="lossOfSmell" value="0">No
+              <input type="radio" class="radio" name="lossOfSmell" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>lossOfTaste</p>
+              <p>Are you experiencing a loss of taste?</p>
               <input type="radio" class="radio" name="lossOfTaste" value="1">Yes
-              <input type="radio" class="radio" name="lossOfTaste" value="0">No
+              <input type="radio" class="radio" name="lossOfTaste" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>seizure</p>
+              <p>Did you have a seizure?</p>
               <input type="radio" class="radio" name="seizure" value="1">Yes
-              <input type="radio" class="radio" name="seizure" value="0">No
+              <input type="radio" class="radio" name="seizure" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>nauseaOrVomiting</p>
+              <p>Do you have nausea or vomiting?</p>
               <input type="radio" class="radio" name="nauseaOrVomiting" value="1">Yes
-              <input type="radio" class="radio" name="nauseaOrVomiting" value="0">No
+              <input type="radio" class="radio" name="nauseaOrVomiting" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>lightTrigger</p>
+              <p>Does light trigger your headache?</p>
               <input type="radio" class="radio" name="lightTrigger" value="1">Yes
-              <input type="radio" class="radio" name="lightTrigger" value="0">No
+              <input type="radio" class="radio" name="lightTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>allergenTrigger</p>
+              <p>Do allergens trigger your headache?</p>
               <input type="radio" class="radio" name="allergenTrigger" value="1">Yes
-              <input type="radio" class="radio" name="allergenTrigger" value="0">No
+              <input type="radio" class="radio" name="allergenTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>loudNoiseTrigger</p>
-              <input type="radio" class="radio" name="loudNoiseTrigger" value="1">Yes
-              <input type="radio" class="radio" name="loudNoiseTrigger" value="0">No
+              <p>Does loud noise trigger your headache?</p>
+              <input type="radio" class="radio" name="loudNo<br><br>iseTrigger" value="1">Yes
+              <input type="radio" class="radio" name="loudNo<br><br>iseTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>dehydrationTrigger</p>
+              <p>Does dehydration trigger your headache?</p>
               <input type="radio" class="radio" name="dehydrationTrigger" value="1">Yes
-              <input type="radio" class="radio" name="dehydrationTrigger" value="0">No
+              <input type="radio" class="radio" name="dehydrationTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>bendingOverTrigger</p>
+              <p>Does bending over trigger your headache?</p>
               <input type="radio" class="radio" name="bendingOverTrigger" value="1">Yes
-              <input type="radio" class="radio" name="bendingOverTrigger" value="0">No
+              <input type="radio" class="radio" name="bendingOverTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>stressTrigger</p>
+              <p>Does stress trigger your headache?</p>
               <input type="radio" class="radio" name="stressTrigger" value="1">Yes
-              <input type="radio" class="radio" name="stressTrigger" value="0">No
+              <input type="radio" class="radio" name="stressTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>periodTrigger</p>
+              <p>Does your period trigger your headache?</p>
               <input type="radio" class="radio" name="periodTrigger" value="1">Yes
-              <input type="radio" class="radio" name="periodTrigger" value="0">No
+              <input type="radio" class="radio" name="periodTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>exerciseTrigger</p>
+              <p>Does exercise trigger your headache?</p>
               <input type="radio" class="radio" name="exerciseTrigger" value="1">Yes
-              <input type="radio" class="radio" name="exerciseTrigger" value="0">No
+              <input type="radio" class="radio" name="exerciseTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>sleepPatternChangeTrigger</p>
+              <p>Does a sleep pattern change trigger your headache?</p>
               <input type="radio" class="radio" name="sleepPatternChangeTrigger" value="1">Yes
-              <input type="radio" class="radio" name="sleepPatternChangeTrigger" value="0">No
+              <input type="radio" class="radio" name="sleepPatternChangeTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>chemicalTrigger</p>
+              <p>Do certain chemicals trigger your headache?</p>
               <input type="radio" class="radio" name="chemicalTrigger" value="1">Yes
-              <input type="radio" class="radio" name="chemicalTrigger" value="0">No
+              <input type="radio" class="radio" name="chemicalTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>alcoholTrigger</p>
+              <p>Does alcohol trigger your headache?</p>
               <input type="radio" class="radio" name="alcoholTrigger" value="1">Yes
-              <input type="radio" class="radio" name="alcoholTrigger" value="0">No
+              <input type="radio" class="radio" name="alcoholTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>caffeineTrigger</p>
+              <p>Does caffeine trigger your headache?</p>
               <input type="radio" class="radio" name="caffeineTrigger" value="1">Yes
-              <input type="radio" class="radio" name="caffeineTrigger" value="0">No
+              <input type="radio" class="radio" name="caffeineTrigger" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>restingAlleviator</p>
+              <p>Does resting alleviate your symptoms?</p>
               <input type="radio" class="radio" name="restingAlleviator" value="1">Yes
-              <input type="radio" class="radio" name="restingAlleviator" value="0">No
+              <input type="radio" class="radio" name="restingAlleviator" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>waterAlleviator</p>
+              <p>Does water alleviate your symptoms?</p>
               <input type="radio" class="radio" name="waterAlleviator" value="1">Yes
-              <input type="radio" class="radio" name="waterAlleviator" value="0">No
+              <input type="radio" class="radio" name="waterAlleviator" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>darkRoomAlleviator</p>
+              <p>Does a dark room alleviate your symptoms?</p>
               <input type="radio" class="radio" name="darkRoomAlleviator" value="1">Yes
-              <input type="radio" class="radio" name="darkRoomAlleviator" value="0">No
+              <input type="radio" class="radio" name="darkRoomAlleviator" value="0">No<br><br>
             </div>
             <div class="form-group">
-              <p>silenceAlleviator</p>
+              <p>Does silence alleviate your symptoms?</p>
               <input type="radio" class="radio" name="silenceAlleviator" value="1">Yes
-              <input type="radio" class="radio" name="silenceAlleviator" value="0">No
+              <input type="radio" class="radio" name="silenceAlleviator" value="0">No<br><br>
             </div>
 
 
             <button class="btn btn-default" onclick="submitButton();">{{ .Site.Params.contact.form.button }}</button>
           </form>
-          <form id="submitForm" class="hidden" action="{{.Site.BaseURL}}/php/toTextFile.php" method="POST" style="display: none;">
+          <form id="submitForm" class="hidden" action="{{.Site.BaseURL}}/php/toPresentation.php" method="POST" style="display: none;">
             <input type="text" name="submitForm" value="">
           </form>
         </div>
       </div>
     </div>
-    <div id="contact-box" class="row">
+    <!-- <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
 
@@ -219,7 +220,7 @@
         </div>
         {{ end }}
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 

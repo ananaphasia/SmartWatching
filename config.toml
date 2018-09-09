@@ -31,7 +31,7 @@ publishDir = "docs"
   [params.slider]
     enable = true
     title = "Propelling Headache Diagnosis and Imaging into the 21st Century"
-    subtitle = "We learn from your headache patterns to help clinicians help you"
+    subtitle = "We learn from your headache patterns to help clinicians help you. <br> Powered by Artifical Intelligence."
 
   [params.wrapper]
     enable = true
@@ -55,13 +55,9 @@ publishDir = "docs"
     enable = true
 
   [params.call]
-    enable = true
+    enable = false
     title = "Inspiration"
-    paragraph = "It all started with two challenges we saw in the clinical space:
-1. Clinicians needed information from patients about their headaches in order to understand what was causing them, and sometimes used paper headache journals
-2. About a billion dollars are spent per year on headache related neuroimaging, however only a small percentage of scans show up clinically relevant findings
-
-"
+    paragraph = "It all started with two challenges we saw in the clinical space: 1. Clinicians needed information from patients about their headaches in order to understand what was causing them, and sometimes used paper headache journals 2. About a billion dollars are spent per year on headache related neuroimaging, however only a small percentage of scans show up clinically relevant findings."
 
   [params.contact]
     enable = true
@@ -83,65 +79,65 @@ publishDir = "docs"
 
   [params.form]
     [[params.form.numInput]]
-      name = "age"
+      name = "What is your age?"
     [[params.form.numInput]]
-      name = "frequency / year"
+      name = "How many times per year do you get headaches?"
     [[params.form.numInput]]
-      name = "intensity"
+      name = "What is the intensity of your headache, out of 10?"
     [[params.form.numInput]]
-      name = "medications"
+      name = "Please list any medications that you are taking."
     [[params.form.radio]]
+        name = "What is your sex?"
+      [[params.form.radio.buttons]]
+        button = "Female"
         name = "sex"
       [[params.form.radio.buttons]]
-        button = "0"
-        name = "sex"
-      [[params.form.radio.buttons]]
-        button = "1"
+        button = "Male"
         name = "sex"
     [[params.form.radio]]
-      name = "race"
+      name = "What is your race?"
       [[params.form.radio.buttons]]
-        button = "0"
+        button = "African American"
         name = "race"
       [[params.form.radio.buttons]]
-        button = "1"
+        button = "Asian"
         name = "race"
       [[params.form.radio.buttons]]
-        button = "2"
+        button = "Native American or Other Pasific Islander"
         name = "race"
       [[params.form.radio.buttons]]
-        button = "3"
+        button = "Hispanic or Latino"
         name = "race"
       [[params.form.radio.buttons]]
-        button = "4"
+        button = "White or Caucasian"
         name = "race"
     [[params.form.radio]]
-      name = "onset"
+      name = "How fast is the onset of your pain?"
       [[params.form.radio.buttons]]
-        button = "0"
+        button = "Less than 1 minute"
         name = "onset"
       [[params.form.radio.buttons]]
-        button = "1"
+        button = "Between 1 minute and 5 minutes"
         name = "onset"
       [[params.form.radio.buttons]]
-        button = "2"
+        button = "More than 5 minutes"
         name = "onset"
     [[params.form.radio]]
-      name = "pain"
+      name = "Where is the location of your pain?"
       [[params.form.radio.buttons]]
-        button = "0"
+        button = "Left side"
         name = "pain"
       [[params.form.radio.buttons]]
-        button = "1"
+        button = "Right side"
         name = "pain"
       [[params.form.radio.buttons]]
-        button = "2"
+        button = "Front"
         name = "pain"
       [[params.form.radio.buttons]]
-        button = "3"
+        button = "Back"
         name = "pain"
       [[params.form.radio.buttons]]
-        button = "4"
+        button = "Entire head"
         name = "pain"
     [[params.form.checkboxes]]
       yes = "yes"

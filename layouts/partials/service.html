@@ -1,7 +1,7 @@
 <!-- Service Start -->
 <section id="service">
   <div class="container">
-    
+
     <!-- Intro -->
     <div class="row">
       <div class="section-title">
@@ -13,7 +13,7 @@
     <!-- Content -->
     <div class="row">
       {{ range .Site.Data.service.content }}
-      <div class="col-sm-6 col-md-3">
+      <div class="col-sm-6 col-md-3" style="display: inline-block; margin: 0 auto;">
         <div class="service-item">
           <i class="{{ .icon }}"></i>
           <h4>{{ .name }}</h4>
