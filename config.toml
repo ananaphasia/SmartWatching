@@ -79,7 +79,7 @@ publishDir = "docs"
 
   [params.form]
     [[params.form.numInput]]
-      name = "What is your age?"
+      name = "How old are you?"
     [[params.form.numInput]]
       name = "How many times per year do you get headaches?"
     [[params.form.numInput]]
@@ -125,16 +125,16 @@ publishDir = "docs"
     [[params.form.radio]]
       name = "Where is the location of your pain?"
       [[params.form.radio.buttons]]
-        button = "Left side"
+        button = "Left side of head"
         name = "pain"
       [[params.form.radio.buttons]]
-        button = "Right side"
+        button = "Right side of head"
         name = "pain"
       [[params.form.radio.buttons]]
-        button = "Front"
+        button = "Front of head"
         name = "pain"
       [[params.form.radio.buttons]]
-        button = "Back"
+        button = "Back of head"
         name = "pain"
       [[params.form.radio.buttons]]
         button = "Entire head"

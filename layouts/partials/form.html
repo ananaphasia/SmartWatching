@@ -4,10 +4,11 @@
 <section id="headache-form" style="padding-top: 25px;">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-4 col-sm-12">
         <div class="block">
           <form>
-            {{ range $index, $element := .Site.Params.form.numInput }}
+            {{ range $index, $element := .Site.Params.form.numInput}}
+              <p>{{$element.name}}</p>
             <div class="form-group">
               <input type="text" class="form-control input" name="{{ $element.name }}" placeholder="{{ $element.name }}">
             </div>
@@ -28,7 +29,7 @@
           </form>
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-4 col-sm-12">
         <div class="block">
           <form>
             <!-- <div class="form-group-2">
@@ -41,7 +42,7 @@
             </div>
             {{ end }} -->
             <div class="form-group">
-              <p>Primary</p>
+              <p>Is it a primary type headache?</p>
               <input type="radio" class="radio" name="primary" value="1">Yes
               <input type="radio" class="radio" name="primary" value="0">No<br><br>
             </div>
@@ -115,6 +116,13 @@
               <input type="radio" class="radio" name="dehydrationTrigger" value="1">Yes
               <input type="radio" class="radio" name="dehydrationTrigger" value="0">No<br><br>
             </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-md-5">
+        <div class="block">
+          <form>
             <div class="form-group">
               <p>Does bending over trigger your headache?</p>
               <input type="radio" class="radio" name="bendingOverTrigger" value="1">Yes
@@ -176,8 +184,9 @@
               <input type="radio" class="radio" name="silenceAlleviator" value="0">No<br><br>
             </div>
 
-            <a href="https://docs.google.com/presentation/d/1HcqCfA4I5UFAwmoKZy44wgP3H_Fxs7LkgGqAAx29oVU/edit#slide=id.g40e88080c9_4_2">
-              <button class="btn btn-default">{{ .Site.Params.contact.form.button }}</button>
+            <a href="../workinprogress">
+              <!-- <button class="btn btn-default">{{ .Site.Params.contact.form.button }}</button> -->
+              <p>Submit Form</p>
             </a>
           </form>
           <!-- <form id="submitForm" class="hidden" action="{{.Site.BaseURL}}php/toPresentation.php" method="POST" style="display: none;">
