@@ -325,7 +325,7 @@
 
             <button class="btn btn-default" onclick="submitButton();">Send message</button>
           </form>
-          <form id="submitForm" class="hidden" action="https://as4mo3.github.io/NoMoreHeadaches//php/toPresentation.php" method="POST" style="display: none;">
+          <form id="submitForm" class="hidden" action="https://as4mo3.github.io/NoMoreHeadaches/php/toPresentation.php" method="POST" style="display: none;">
             <input type="text" name="submitForm" value="">
           </form>
         </div>
@@ -376,13 +376,13 @@ function submitButton() {
     issuesList[i+4] = x[i].value;
   }
   return issuesList;
-  if (validateForm() && validateInputs()) {
+  
     var issuesListString;
     issuesListString = issuesList.toString();
     $(".hidden")[0].children[0].value = selectedListString;
     document.getElementById("submitForm")[0].value = selectedListString;
     document.getElementById("submitForm").submit();
-  }
+  
 }
 
 </script>
