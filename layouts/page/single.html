@@ -10,7 +10,13 @@
 	{{ if isset .Params "id" }}
 		{{ partial .Params.id . }}
 	{{ else }}
-		<main>{{ .Content }}</main>
+		<main>
+		<div class="container">
+			<div class="row">
+				{{.Content}}
+			</div>
+		</div>
+	</main>
 	{{ end }}
 
 	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
