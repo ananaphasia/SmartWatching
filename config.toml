@@ -54,7 +54,8 @@ publishDir = "docs"
   [params.feature]
     enable = true
     title = "SmartWatcher Code Flow"
-    # content = "testing content"
+    # content = "<a href ='https://devpost.com/software/smartwatcher'>Devpost</a>"
+    # content = "[Devpost](https://devpost.com/software/smartwatcher), [GitHub](https://github.com/as4mo3/SmartWatching), and [presentation](https://docs.google.com/presentation/d/1hnEbS85fWeWY49ii0HkPnh7WHXjcbiytJyHt43siGMw/edit?usp=sharing)"
 
   [params.call]
     enable = false
