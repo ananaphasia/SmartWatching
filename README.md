@@ -29,6 +29,8 @@ I learned how to use Amazon Lambda architecture and DynamoDB.
 
 SmartWatcher will eventually have the same capability for music, temperature regulation, and (maybe) self-driving!
 
+## Links
+
 [Website](http://localhost:1313/SmartWatching/), [Devpost](https://devpost.com/software/smartwatcher), [GitHub](https://github.com/as4mo3/SmartWatching), and [presentation](https://docs.google.com/presentation/d/1hnEbS85fWeWY49ii0HkPnh7WHXjcbiytJyHt43siGMw/edit?usp=sharing) links.
 
 ---
