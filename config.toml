@@ -1,5 +1,5 @@
 title = "SmartWatcher"
-baseURL = "https://as4mo3.github.io/SmartWatcher/"
+baseURL = "https://as4mo3.github.io/SmartWatching/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 publishDir = "docs"
