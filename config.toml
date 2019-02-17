@@ -1,5 +1,5 @@
-title = "headER"
-baseURL = "https://as4mo3.github.io/NoMoreHeadaches/"
+title = "SmartWatcher"
+baseURL = "https://as4mo3.github.io/SmartWatcher/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 publishDir = "docs"
@@ -7,10 +7,10 @@ publishDir = "docs"
 
 [menu]
 
-  [[menu.header]]
-    weight = 6
-    name = "Form"
-    url = "/form"
+  # [[menu.header]]
+  #   weight = 6
+  #   name = "Form"
+  #   url = "/form"
 #  [[menu.header]]
 #    weight = 3
 #    name = "Other"
@@ -30,14 +30,14 @@ publishDir = "docs"
 
   [params.slider]
     enable = true
-    title = "Propelling Headache Diagnosis and Imaging into the 21st Century"
-    subtitle = "We learn from your headache patterns to help clinicians help you. <br> Powered by Artifical Intelligence."
+    title = "Propelling Voice Activated Commands into the Artifical Intelligence era"
+    subtitle = "This Amazon Alexa Skill learn from your actions, and then does them for you. Leaving you more free time every day."
 
   [params.wrapper]
     enable = true
     title = "Mission Statement"
     # italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-   paragraph = "We are transforming the way that clinicians diagnose headaches by empowering patients to share their headache symptoms in real time. Then, by analyzing headache patterns, and following the clinical outcomes associated with each pattern, our algorithm will learn to recognize if a patient’s headache pattern indicates that they are high or low risk. Our program will improve patient outcomes, reduce radiation exposure, and decrease medical costs."
+   paragraph = "In order to best more forward into a truly hands-free and fully automated future, we have to start with small actions: such as turning the lights on and off. This Amazon Alexa skill integrates with your smart home devices, and learns when you do certain actions. Over time, this skill will become so good at its task that you won't even have to say, 'Alexa, turn off the lights'."
 
   [params.blog]
     enable = true
@@ -53,6 +53,8 @@ publishDir = "docs"
 
   [params.feature]
     enable = true
+    title = "SmartWatcher Code Flow"
+    # content = "testing content"
 
   [params.call]
     enable = false

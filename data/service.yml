@@ -1,27 +1,29 @@
 enable: true
-title: Our Inspiration
+title: Endless Possibilities
 subtitle: >
-  It all started when we noticed glaring issues in the clinical space.
+  Here is just some of what SmartWatcher can do, as well as some features that will be available soon.
 content:
 
-  - icon:
-    name:
+  - icon: ion-music-note
+    name: Musical Management
     text: >
+      SmartWatcher is a listener too! It can play your favorite music, right when you would yourself.
 
-  - icon: ion-cash
-    name: Cash Spending
+  - icon: ion-lightbulb
+    name: Light Controller
     text: >
-      About a billion dollars are spent per year on headache-related neuroimaging. Yet, only a small percentage of scans show up clinically relevant findings.
+      SmartWatcher can turn your lights on and off - without you lifting a finger.
 
 
-  - icon: ion-heart
-    name: Consistent Information
+  - icon: ion-fireball
+    name: Temperature Regulation
     text: >
-      Clinicians need information from patients about their headaches to understand their causes. Clinicians evensometimes used paper headache journals.
+      With an integrated Smart Thermostat, SmartWatcher can control the temperature in your home, whether you are there or not.
   #
-  - icon:
-    name:
+  - icon: ion-android-car
+    name: Personal Chauffeur?
     text: >
+      Can SmartWatcher even drive your own car? Unfortunately, not yet, but this functionality is already in development.
 
   #
   # - icon: ion-headphone
