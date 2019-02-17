@@ -31,6 +31,6 @@ SmartWatcher will eventually have the same capability for music, temperature reg
 
 [Website](http://localhost:1313/SmartWatching/), [GitHub](https://github.com/as4mo3/SmartWatching), and [presentation](https://docs.google.com/presentation/d/1hnEbS85fWeWY49ii0HkPnh7WHXjcbiytJyHt43siGMw/edit?usp=sharing) links.
 
-<span "font-size: 2em">Created at uncommonhacks 2019. All rights reserved. </span>
+Created at uncommonhacks 2019. All rights reserved.
 
-<sub>Image courtesy of [David Kaplan](https://geomarketing.com/voice-activated-connected-device-usage-jumps-130-percent-this-year).</sub>
+Image courtesy of [David Kaplan](https://geomarketing.com/voice-activated-connected-device-usage-jumps-130-percent-this-year).
