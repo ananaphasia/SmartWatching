@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on headER</title>
-    <link>https://as4mo3.github.io/NoMoreHeadaches/categories/</link>
-    <description>Recent content in Categories on headER</description>
+    <title>Categories on SmartWatcher</title>
+    <link>https://as4mo3.github.io/SmartWatcher/categories/</link>
+    <description>Recent content in Categories on SmartWatcher</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://as4mo3.github.io/NoMoreHeadaches/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://as4mo3.github.io/SmartWatcher/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Lorem</title>
-      <link>https://as4mo3.github.io/NoMoreHeadaches/categories/lorem/</link>
+      <link>https://as4mo3.github.io/SmartWatcher/categories/lorem/</link>
       <pubDate>Sat, 10 Oct 2015 13:07:31 +0200</pubDate>
       
-      <guid>https://as4mo3.github.io/NoMoreHeadaches/categories/lorem/</guid>
+      <guid>https://as4mo3.github.io/SmartWatcher/categories/lorem/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programming</title>
-      <link>https://as4mo3.github.io/NoMoreHeadaches/categories/programming/</link>
+      <link>https://as4mo3.github.io/SmartWatcher/categories/programming/</link>
       <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
       
-      <guid>https://as4mo3.github.io/NoMoreHeadaches/categories/programming/</guid>
+      <guid>https://as4mo3.github.io/SmartWatcher/categories/programming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Pseudo</title>
-      <link>https://as4mo3.github.io/NoMoreHeadaches/categories/pseudo/</link>
+      <link>https://as4mo3.github.io/SmartWatcher/categories/pseudo/</link>
       <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
       
-      <guid>https://as4mo3.github.io/NoMoreHeadaches/categories/pseudo/</guid>
+      <guid>https://as4mo3.github.io/SmartWatcher/categories/pseudo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Starting</title>
-      <link>https://as4mo3.github.io/NoMoreHeadaches/categories/starting/</link>
+      <link>https://as4mo3.github.io/SmartWatcher/categories/starting/</link>
       <pubDate>Wed, 24 Jun 2015 13:50:46 +0200</pubDate>
       
-      <guid>https://as4mo3.github.io/NoMoreHeadaches/categories/starting/</guid>
+      <guid>https://as4mo3.github.io/SmartWatcher/categories/starting/</guid>
       <description></description>
     </item>
     
