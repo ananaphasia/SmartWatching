@@ -1,5 +1,5 @@
 ## SmartWatching
-AI Alexa Skill which automatically controls lights. Created at uncommonhacks 2019.
+AI Alexa Skill which automatically controls lights. Created at uncommonhacks 2019. Link to Skill code in SmartWatcher folder.
 
 ## Inspiration
 
